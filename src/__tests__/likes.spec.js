@@ -8,6 +8,7 @@ describe("Likes", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
+        description: "Description",
         techs: ["Node", "Express", "TypeScript"]
       });
 

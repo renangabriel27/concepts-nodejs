@@ -9,6 +9,7 @@ describe("Projects", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
+        description: "Description",
         techs: ["Node", "Express", "TypeScript"]
       });
 
@@ -17,6 +18,7 @@ describe("Projects", () => {
     expect(response.body).toMatchObject({
       url: "https://github.com/Rocketseat/umbriel",
       title: "Umbriel",
+      description: "Description",
       techs: ["Node", "Express", "TypeScript"],
       likes: 0
     });
@@ -28,6 +30,7 @@ describe("Projects", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
+        description: "Description",
         techs: ["Node", "Express", "TypeScript"]
       });
 
@@ -39,6 +42,7 @@ describe("Projects", () => {
           id: repository.body.id,
           url: "https://github.com/Rocketseat/umbriel",
           title: "Umbriel",
+          description: "Description",
           techs: ["Node", "Express", "TypeScript"],
           likes: 0
         }
@@ -52,6 +56,7 @@ describe("Projects", () => {
       .send({
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
+        description: "Description",
         techs: ["Node", "Express", "TypeScript"]
       });
 
@@ -60,6 +65,7 @@ describe("Projects", () => {
       .send({
         url: "https://github.com/Rocketseat/unform",
         title: "Unform",
+        description: "Description",
         techs: ["React", "ReactNative", "TypeScript", "ContextApi"]
       });
 
