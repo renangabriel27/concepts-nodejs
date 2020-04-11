@@ -74,6 +74,7 @@ describe("Projects", () => {
     expect(response.body).toMatchObject({
       url: "https://github.com/Rocketseat/unform",
       title: "Unform",
+      description: "Description",
       techs: ["React", "ReactNative", "TypeScript", "ContextApi"]
     });
   });
